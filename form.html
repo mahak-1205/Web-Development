@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Complex Registration Form</title>
+    <style>
+    </style>
+</head>
+<body>
+
+    <h2>Complex Registration Form</h2>
+
+    <form>
+        <!-- Personal Information -->
+        <fieldset>
+            <legend>Personal Information</legend>
+            <label for="fname">First Name:</label>
+            <input type="text" id="fname" name="fname"><br></br>
+
+            <label for="lname">Last Name:</label>
+            <input type="text" id="lname" name="lname"><br></br>
+
+            <label>Gender:</label>
+            <input type="radio" id="male" name="gender" value="male"> Male
+            <input type="radio" id="female" name="gender" value="female"> Female
+            <input type="radio" id="other" name="gender" value="other"> Other<br></br>
+
+            <label for="dob">Date of Birth:</label>
+            <input type="date" id="dob" name="dob"><br></br>
+
+            <label for="nationality">Nationality:</label>
+            <select id="nationality" name="nationality">
+                <option value="">select</option>
+                <option value="indian">Indian</option>
+                <option value="american">American</option>
+                <option value="other">Other</option>
+            </select>
+        </fieldset>
+
+        <!-- Contact Information -->
+        <fieldset>
+            <legend>Contact Information</legend>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" placeholder="example@example.com"><br></br>
+
+            <label for="phone">Phone Number:</label>
+            <input type="tel" id="phone" name="phone" placeholder="10-digit number" pattern="[0-9]{10}"><br></br>
+
+            <label for="address">Address:</label>
+            <textarea id="address" name="address" rows="3" cols="30"></textarea><br></br>
+
+            <label for="city">City:</label>
+            <input type="text" id="city" name="city"><br></br>
+
+            <label for="zip">ZIP Code:</label>
+            <input type="text" id="zip" name="zip" placeholder="5-digit ZIP">
+        </fieldset>
+
+        <!-- Education -->
+        <fieldset>
+            <legend>Education</legend>
+            <label for="education">Highest Education Level:</label>
+            <select id="education" name="education">
+                <option value="">Select</option>
+                <option value="highschool">High School</option>
+                <option value="diploma">Diploma</option>
+                <option value="bachelors">Bachelor's</option>
+                <option value="masters">Master's</option>
+                <option value="phd">PhD</option>
+            </select><br></br>
+
+            <label for="skills">Skills:</label>
+            <select id="skills" name="skills">
+            <option value="">Select</option>
+                <option value="html">HTML</option>
+                <option value="css">CSS</option>
+                <option value="js">JavaScript</option>
+                <option value="python">Python</option>
+                <option value="java">Java</option>
+            </select>
+        </fieldset>
+
+        <!-- Work Experience -->
+        <fieldset>
+            <legend>Work Experience</legend>
+            <label>Are you currently employed?</label>
+            <input type="checkbox" id="employed" name="employed" value="yes"> Yes
+        </fieldset>
+
+        <input type="submit" value="Submit">
+        <input type="reset" value="Reset">
+    </form>
+
+</body>
+</html>
