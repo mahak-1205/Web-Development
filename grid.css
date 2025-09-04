@@ -1,0 +1,40 @@
+body {
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: white;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-areas: 
+    "a a a"
+    "b c d"
+    "b e e";
+  grid-template-columns: 1fr 2fr 1fr;  /* 3 equal width columns */
+  grid-template-rows: 1fr 2fr 1fr;    /* 3 rows: header, mid, bottom */
+  width: 90%;
+  max-width: 900px;
+  height: 90vh;
+}
+
+/* Common box style */
+.box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 22px;
+  font-weight: bold;
+  color: black;
+}
+
+/* Areas */
+.a { grid-area: a; background: red; }
+.b { grid-area: b; background: blue; }
+.c { grid-area: c; background: lime; }
+.d { grid-area: d; background: cyan; }
+.e { grid-area: e; background: lightseagreen; } 
+
+
